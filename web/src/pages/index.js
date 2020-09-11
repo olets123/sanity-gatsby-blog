@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'gatsby'
 import {graphql} from 'gatsby'
 import {
   mapEdgesToNodes,
@@ -10,6 +11,9 @@ import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
+
+// Styles
+import "../styles/home-page.css";
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -84,7 +88,7 @@ const IndexPage = props => {
 
   if (!site) {
     throw new Error(
-      'Missing "Site settings". Open the studio at http://localhost:3333 and add some content to "Site settings" and restart the development server.'
+      'Missing "Site settings". Open the magic studio and add some content to "Site settings" and restart the development server.'
     )
   }
 
@@ -95,6 +99,12 @@ const IndexPage = props => {
         description={site.description}
         keywords={site.keywords}
       />
+
+      <div className="home-page">
+      <h1 className="Heading-home">Rakettåsen Skilinje</h1>
+      <Link className="link" to='/archive/'>Møt Teamet</Link>
+      </div>
+
       <Container>
         <h1 hidden>Welcome to {site.title}</h1>
         {postNodes && (

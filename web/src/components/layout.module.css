@@ -2,7 +2,8 @@
 @import '../styles/custom-properties.css';
 
 .content {
-  background: var(--color-white);
+  background: black;
+  color: white;
   min-height: calc(100% - 73px - 120px);
 
   @media (--media-min-small) {
@@ -11,10 +12,12 @@
 }
 
 .footer {
-  border-top: 1px solid var(--color-very-light-gray);
+  border-top: 2px solid rgb(255, 0, 157);
+  color: rgb(255, 0, 157);
+  font-weight: bold;
 
   @nest & a {
-    color: inherit;
+    color: rgb(255, 0, 157);
     text-decoration: none;
 
     @media (hover: hover) {
