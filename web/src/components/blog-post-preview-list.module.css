@@ -2,7 +2,7 @@
 @import '../styles/custom-properties.css';
 
 .root {
-  margin: 2em 0 4em;
+  margin: 15rem 0 4rem;
 }
 
 .headline {
@@ -12,6 +12,22 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 2rem 0;
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+    font-size: 3.0rem;
+    color: rgb(255, 0, 221);
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgb(255, 0, 221);
+}
+
+@media only screen and (max-width: 450px) {
+  .root {
+    margin: 2rem 0 2rem;
+  }
+  .headline {
+    font-size: 1.8rem;
+  }
+ 
 }
 
 .grid {
@@ -20,14 +36,19 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
-  grid-column-gap: 2em;
-  grid-row-gap: 2em;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
 }
 
 .browseMoreNav {
   composes: small from './typography.module.css';
   margin-top: 2rem;
+  font-size: 1.2rem;
+  font-family: 'Audiowide', cursive;
+  color: white;
   text-align: center;
+  background: rgb(255, 0, 221);
+  text-transform: uppercase;
 
   @nest & a {
     display: inline-block;

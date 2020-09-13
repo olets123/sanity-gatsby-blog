@@ -1,17 +1,28 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 .root {}
 
 .title {
   composes: responsiveTitle1 from './typography.module.css';
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 450px)  {
+.title {
+  font-size: 2.8rem;
+
+}
 }
 
 .mainImage {
   display: block;
   position: relative;
   background: var(--color-very-light-gray);
-  padding-bottom: calc(9 / 16 * 100%);
+  padding-bottom: calc(6 / 16 * 100%);
 
   @nest & img {
     display: block;
@@ -21,15 +32,24 @@
     width: 100%;
     height: 100%;
     vertical-align: top;
-    object-fit: cover;
+    object-fit: contain;
+    background: black;
   }
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  line-height: 1.8rem;
+  text-indent: 1%;
+
 }
 
 .grid {
   @media (--media-min-medium) {
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 2em;
+    grid-column-gap: 5em;
     grid-template-columns: 3fr 1fr;
   }
 }
@@ -60,12 +80,17 @@
 }
 
 .metaContent {
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 300;
 }
 
 .publishedAt {
   composes: small from './typography.module.css';
   margin: 2rem 0 3rem;
-  color: var(--color-gray);
+  color: white;
+  font-size: 1.2rem;
 }
 
 .categories {

@@ -35,6 +35,7 @@
   composes: small from './typography.module.css';
   margin-top: 1rem;
   text-align: right;
+  
 
   @nest & a {
     display: inline-block;

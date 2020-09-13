@@ -52,6 +52,7 @@
   padding: calc(14 / 17 / 2 * 1rem);
   outline: none;
   color: inherit;
+  
 
   & svg {
     display: block;
@@ -66,14 +67,16 @@
 .nav {
   display: none;
   font-family: 'Audiowide', cursive;
+ 
 
-
-  
 
   @nest & ul {
     margin: 0rem;
     padding: 0rem; 
     list-style-type: none;
+    background: black;
+    color: white;
+
 
   }
 

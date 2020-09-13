@@ -13,12 +13,30 @@
     background-size: 2000px 2100px;
     background-repeat: no-repeat;
     background-position: center;
+    
+    
+}
+@media only screen and (max-width: 1050px) { 
+    body {
+        width: 100%;  
+    }
+    h1.Heading-home {
+        font-size: 3.5rem; 
+        width: auto;
+    }
+    a.link {
+        padding: 0.5rem !important;
+        position: relative;
+        left: 30%;
+        top: 3rem;
+       
+    }
 }
 
 @media only screen and (max-width: 450px) {
+
     body {
-        width: 100%;
-        
+        width: 100%;  
     }
     .home-page {
       position: relative;
@@ -41,8 +59,10 @@
         top: 0rem;
        
     }
+    
   }
 
+  @keyframes tracking-in-expand-fwd-top{0%{letter-spacing:-.5em;transform:translateZ(-700px) translateY(-500px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);opacity:1}}
 
 .Heading-home {
     font-family: 'Audiowide', cursive;
@@ -53,8 +73,10 @@
     font-size: 6.0rem;
     text-transform: uppercase;
     text-align: center;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: white;
+    -webkit-animation: tracking-in-expand-fwd-top 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd-top 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .link {
@@ -70,7 +92,48 @@
     border: 2px solid white;
     background: rgba(255, 255, 255, 0.733);
     text-decoration: none;
+    
 }
 
+
+
+.custom-shape-divider-top-1600010378 {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    
+    line-height: 0;
+    transform: rotate(180deg);
+    
+}
+
+
+.custom-shape-divider-top-1600010378 svg {
+    position: relative;
+    display: block;
+    width: calc(184% + 1.3px);
+    height: 291px;
+}
+
+.custom-shape-divider-top-1600010378 .shape-fill {
+    fill: #FF00DD;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1600010378 svg {
+        width: calc(210% + 1.3px);
+        height: 215px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1600010378 svg {
+        width: calc(181% + 1.3px);
+        height: 110px;
+    }
+}
 
 /*Remember @media queries*/
