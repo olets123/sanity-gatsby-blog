@@ -1,4 +1,5 @@
 /* CSS for index.js - home*/
+@import './custom-media.css';
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 .home-page {
@@ -13,6 +14,34 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@media only screen and (max-width: 450px) {
+    body {
+        width: 100%;
+        
+    }
+    .home-page {
+      position: relative;
+      left: -28%; 
+      background-size: 100% auto;
+      width: 100%;
+      object-fit: scale-down;
+    }
+    h1.Heading-home {
+        font-size: 2.5rem;
+        position: relative;
+        top: -5rem;
+        left: 15%;
+        width: auto;
+    }
+    a.link {
+        padding: 0.5rem !important;
+        position: relative;
+        left: 35%;
+        top: 0rem;
+       
+    }
+  }
 
 
 .Heading-home {
