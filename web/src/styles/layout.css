@@ -16,6 +16,10 @@ body {
   
 }
 
+pre {
+  color: white;
+}
+
 html,
 body,
 body > div,
