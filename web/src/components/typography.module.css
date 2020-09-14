@@ -12,6 +12,7 @@
   font-size: var(--font-title1-size);
   line-height: var(--font-title1-line-height);
   font-family: 'Audiowide', cursive;
+  text-transform: uppercase;
 }
 
 .title2 {
@@ -73,9 +74,13 @@
 
 .responsiveTitle1 {
   font-weight: 600;
-  font-size: var(--font-title2-size);
+  font-size: 1.8rem;
   line-height: var(--font-title2-line-height);
   margin: 1rem 0 2rem;
+  font-family: 'Audiowide', cursive;
+  text-transform: uppercase;
+
+
 
   @media (--media-min-small) {
     font-size: var(--font-title2-size);
