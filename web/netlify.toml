@@ -1,4 +1,4 @@
 [build]
   CI= npm run build
   publish="web/public"
-  base = ""
+  base = "web"
