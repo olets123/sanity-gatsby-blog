@@ -21,7 +21,26 @@ export const query = graphql`
       }
     
     `
-
+/**
+ *  query AboutPageQuery {
+  allSanityAbout {
+    edges {
+      node {
+        id
+        slug {
+          _key
+          _type
+          current
+        }
+        title
+      }
+    }
+    nodes {
+      _rawBody
+    }
+  }
+}
+ */
 const AboutPage = props => {
   const {data, errors} = props
   const { title } = data.sanityAbout
@@ -47,6 +66,7 @@ const AboutPage = props => {
         <div className="paragraphs-about">
         {_rawBody && <PortableText blocks={_rawBody} />}
         <img className="om-oss" src={omOss} alt="gutta-redbull"></img>
+        
         </div>
   
         </div>

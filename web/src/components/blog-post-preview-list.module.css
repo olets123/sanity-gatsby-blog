@@ -2,7 +2,7 @@
 @import '../styles/custom-properties.css';
 
 .root {
-  margin: 15rem 0 4rem;
+  margin: 1rem 0 4rem;
 }
 
 .headline {
@@ -22,7 +22,7 @@
 
 @media only screen and (max-width: 450px) {
   .root {
-    margin: 2rem 0 2rem;
+    margin: 2rem 2rem 2rem;
   }
   .headline {
     font-size: 1.8rem;

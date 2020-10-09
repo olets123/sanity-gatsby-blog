@@ -1,25 +1,21 @@
 
 
 .about-page {
-    color: #FF00DD;
-    text-align: center;
-    margin-top: 1rem;
+    margin-top: 10rem;
     width: 100%;
     margin-bottom: 4rem;
 
 }
 .content-about {
     max-width: 100%;
-    margin-top: 2rem;
-    padding: 4rem 4rem;
+    margin-top: 0rem;
+    padding: 14rem 14rem;
     background-color: #FF00DD;
     position: relative;
     left: 0%;
     margin-bottom: 6rem;
     border-bottom: 2px solid white;
     border-top: 2px solid white;
-
-
 }
 
 .om-oss {
@@ -30,10 +26,14 @@
 }
 
 .paragraphs-about {
+    margin-top: -12rem;
+    width: 100%;
     display: grid;
     grid-template-columns: 700px 500px;
-    grid-gap: 20%;
+    grid-gap: 10%;
     text-align: left;
+    padding: 2rem;
+    
 }
 
 

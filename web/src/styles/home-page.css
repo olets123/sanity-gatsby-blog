@@ -5,7 +5,7 @@
 
 .home-page {
     margin: 0rem;
-    padding: 14%;
+    padding: 4%;
     opacity: 0.81;
     max-width: 100%;
     background-image: url("../images/rakett1.jpg");
@@ -13,7 +13,7 @@
     background-size: 2000px 2100px;
     background-repeat: no-repeat;
     background-position: center;
-    height: auto; 
+    height: 100vh; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -30,17 +30,31 @@
     }
     .home-page {
         background-attachment: scroll;
+        margin: 0;
+        background-size: 100vh;
+        background-position: center;
+        max-width: 100%;
+        object-fit: scale-down;
+        /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        
     }
     
     h1.Heading-home {
-        font-size: 3.5rem; 
+        font-size: 3.0rem; 
         width: auto;
+        position: relative;
+        top: 27rem;
+        
     }
     a.link {
         padding: 0.5rem !important;
         position: relative;
-        left: 30%;
-        top: 3rem;
+        left: 33%;
+        top: 28rem;
        
     }
 }
@@ -51,25 +65,28 @@
         width: 100%;  
     }
     .home-page {
-      position: relative;
-      left: -28%; 
-      background-size: 100% auto;
-      width: 100%;
+      margin: 0;
+      background-size: 100vh;
+      background-position: center;
+      max-width: 100%;
       object-fit: scale-down;
       background-attachment: scroll;
+      
+      
     }
     h1.Heading-home {
         font-size: 2.5rem;
         position: relative;
-        top: -5rem;
-        left: 15%;
+        top: 10rem;
+        left: 0%;
         width: auto;
+        
     }
     a.link {
         padding: 0.5rem !important;
         position: relative;
-        left: 35%;
-        top: 0rem;
+        left: 18%;
+        top: 15rem;
        
     }
     
@@ -81,7 +98,8 @@
     font-family: 'Audiowide', cursive;
     opacity: 1;
     position: relative;
-    top: 4.5rem;
+    padding: 2rem;
+    top: 20rem;
     color: rgb(255, 0, 221);
     font-size: 5.0rem;
     text-transform: uppercase;
@@ -100,11 +118,12 @@
     padding: 1rem;
     font-size: 2.0rem;
     position: relative;
-    top: 3.5rem;
+    top: 25rem;
     right: -40%;
     border: 2px solid white;
     background: rgba(255, 255, 255, 0.733);
     text-decoration: none;
+    transition: 0.5s;
     
 }
 
@@ -112,48 +131,5 @@ a.link:hover {
     color: blue;
 }
 
-
-
-.custom-shape-divider-top-1600010378 {
-    position: absolute;
-    top: 10;
-    left: 0;
-    width: 100%;
-    
-    line-height: 0;
-    transform: rotate(180deg);
-
-    
-    
-}
-
-
-.custom-shape-divider-top-1600010378 svg {
-    position: relative;
-    display: block;
-    width: calc(184% + 1.3px);
-    height: 291px;
-    
-}
-
-.custom-shape-divider-top-1600010378 .shape-fill {
-    fill: #FF00DD;
-}
-
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-top-1600010378 svg {
-        width: calc(210% + 1.3px);
-        height: 215px;
-    }
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-    .custom-shape-divider-top-1600010378 svg {
-        width: calc(181% + 1.3px);
-        height: 110px;
-    }
-}
 
 /*Remember @media queries*/
