@@ -1,4 +1,4 @@
-[[redirects]]
-  from = "/*"
-  to = "/"
-  status = 200
+[build]
+  command = "REACT_APP_STAGE=dev CI='' npm run build"
+  publish="/public"
+  base = ""
