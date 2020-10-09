@@ -1,4 +1,4 @@
 [build]
-  command = "REACT_APP_STAGE=dev CI='' npm run build-web"
+  command = "npm run build-web"
   publish="web/public"
-  base = "web"
+  base = ""
